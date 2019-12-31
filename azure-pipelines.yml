@@ -10,7 +10,7 @@ pool: Default
 
 steps:
 
-- script: 
+- bash: |
     mkdir New-pipeline
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
     npm install ci
