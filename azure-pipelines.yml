@@ -12,10 +12,15 @@ steps:
 
 - script: |
     mkdir New-pipeline
-    cd New-pipeline
-      npm install -g npm-cli-login
-      npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
-      npm install ci
-      npm run build
-      node backup.js
+  displayName: 'Nuevo directorio'
+
+- script: |
+    npm install -g npm-cli-login
+    npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
+    npm install ci
+    npm run build
   displayName: 'npm install and build modules'
+
+- script: |
+    node backup.js 
+  displayName: 'node backup.js'
