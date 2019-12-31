@@ -10,8 +10,10 @@ pool: Default
 
 steps:
 
-- bash: |
+- script: 
     mkdir New-pipeline
+- script:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
+- script:
     npm install ci
   displayName: 'install and build'
