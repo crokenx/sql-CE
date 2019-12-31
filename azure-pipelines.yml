@@ -11,7 +11,7 @@ pool: Default
 steps:
 
 - script: 
-    mkdir New-pipeline
+    cd D:\PruebaDevOps
 - script:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
 - script:
