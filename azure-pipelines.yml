@@ -11,6 +11,7 @@ pool: Default
 steps:
 
 - script: |
+    mkdir New pipeline
     npm install -g npm-cli-login
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
     npm install ci
