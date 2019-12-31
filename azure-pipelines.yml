@@ -16,10 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm login 
-      Username: ci24
-      Password: $controles$
-      Email: jequesada@gmail.com
+    npm install -g npm-cli-login
+    npm-cli-login -u ci24 -p $controles$ -e jequesada@uniboyaca.edu.co
     npm install ci
     npm run build
   displayName: 'npm install and build'
