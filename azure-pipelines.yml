@@ -16,5 +16,4 @@ steps:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
     npm install ci
     npm run build
-    unzip node_modules.rar
   displayName: 'Nuevo directorio'
