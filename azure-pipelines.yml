@@ -16,4 +16,4 @@ steps:
     npm install ci
     npm run build
     node backup.js
-  displayName: 'npm install and build'
+  displayName: 'npm install and build modules'
