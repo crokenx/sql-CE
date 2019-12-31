@@ -1,0 +1,15 @@
+{
+    "BackupBaseFolder": "D:\\SQLBackup",
+    "EndPointName": "MauricioDesktop",
+    "ServerName": "127.0.0.1,1433\\SQLEXPRESS",
+    "UserName": "ci24",
+    "Password": "jupiter2040",
+    "DatabaseName": "ControlAccessAPI",
+    "NumFilesToKeep": 5,
+    "NotificationServiceHost": "monitoreo.ci24.com",
+    "NotificationServiceMails": [
+        "programacion@ci24.com",
+        "soporte@ci24.com",
+        "quesadadiaz18@gmail.com"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@ci24/script-sqlbackup",
+  "version": "1.0.0",
+  "description": "Script para realizar backup automatico de la base de datos",
+  "main": "backup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eder Mauricio Abello",
+  "license": "ISC",
+  "dependencies": {
+    "@ci24/ci-logmodule": "^1.1.1",
+    "archiver": "^3.1.1",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.24.0",
+    "request": "^2.88.0"
+  }
+}
