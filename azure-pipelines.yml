@@ -14,8 +14,8 @@ steps:
     cd D:\PruebaDevOps
   script:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
-  script: 
+- script: 
     npm install ci
-  script:
+- script:
     node backup.js
   displayName: 'install and build'
