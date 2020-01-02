@@ -10,26 +10,20 @@ pool: Default
 
 steps:
 
-- script: # script path or inline
+- script: mkdir nuevo
   workingDirectory: C:\PruebaPipeline
   displayName: 'Cambiando de directorio'
   failOnStderr: 'Fallo cambiando de directorio'
   env: { string: string } # mapping of environment variables to add
 
-- script:
-    cd D:\PruebaDevOps
-  displayName: 'Intentando crear pruebaDevops'
-
-- script:
-    npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
+- script: npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
+  workingDirectory: C:\PruebaPipeline
   displayName: 'logeando npm'
 
-- script: 
+- script: npm install ci
   workingDirectory: C:\PruebaPipeline
-    npm install ci
   displayName: 'Instalando modulos'  
 
-- script:
+- script: node backup.js
   workingDirectory: C:\PruebaPipeline
-    node backup.js
   displayName: 'Intentando correr backup.js'
