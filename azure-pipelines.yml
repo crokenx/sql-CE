@@ -14,7 +14,6 @@ steps:
   workingDirectory: C:\PruebaPipeline
   displayName: 'Cambiando de directorio'
   failOnStderr: 'Fallo cambiando de directorio'
-  env: { string: string } # mapping of environment variables to add
 
 - script: npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
   workingDirectory: C:\PruebaPipeline
