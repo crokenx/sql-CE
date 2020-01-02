@@ -10,7 +10,7 @@ pool: Default
 
 steps:
 
-- script: 
+- script: cd C:\PruebaPipeline
   workingDirectory: C:\PruebaPipeline
   displayName: 'Cambiando de directorio'
   failOnStderr: 'Fallo cambiando de directorio'
