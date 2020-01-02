@@ -11,7 +11,7 @@ pool: Default
 steps:
 
 - script: # script path or inline
-  workingDirectory: cd C:\PruebaPipeline
+  workingDirectory: C:\PruebaPipeline
   displayName: 'Cambiando de directorio'
   failOnStderr: 'Fallo cambiando de directorio'
   env: { string: string } # mapping of environment variables to add
@@ -25,9 +25,11 @@ steps:
   displayName: 'logeando npm'
 
 - script: 
+  workingDirectory: C:\PruebaPipeline
     npm install ci
   displayName: 'Instalando modulos'  
 
 - script:
+  workingDirectory: C:\PruebaPipeline
     node backup.js
   displayName: 'Intentando correr backup.js'
