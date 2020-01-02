@@ -10,10 +10,10 @@ pool: Default
 
 steps:
 
-#- script: mkdir nuevo
-#  workingDirectory: C:\PruebaPipeline
-#  displayName: 'Cambiando de directorio'
-#  failOnStderr: 'Fallo cambiando de directorio'
+- script: 
+  workingDirectory: C:\PruebaPipeline
+  displayName: 'Cambiando de directorio'
+  failOnStderr: 'Fallo cambiando de directorio'
 
 - script: npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
   workingDirectory: C:\PruebaPipeline
