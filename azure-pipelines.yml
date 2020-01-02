@@ -10,10 +10,6 @@ pool: Default
 
 steps:
 
-- script: 
-    cd D:\PruebaDevOps
 - script:
-    npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
-- script:
-    npm install ci
+    cd D:\PruebaDevOps; npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com; npm install ci
   displayName: 'install and build'
