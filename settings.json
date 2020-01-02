@@ -1,5 +1,5 @@
 {
-    "BackupBaseFolder": "D:\\SQLBackup",
+    "BackupBaseFolder": "C:\\SQLBackup",
     "EndPointName": "MauricioDesktop",
     "ServerName": "127.0.0.1,1433\\SQLEXPRESS",
     "UserName": "ci24",
