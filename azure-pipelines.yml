@@ -12,7 +12,7 @@ steps:
 
 - script:
     cd D:\PruebaDevOps
-  script:
+- script:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
 - script: 
     npm install ci
