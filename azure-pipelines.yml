@@ -12,10 +12,16 @@ steps:
 
 - script:
     cd D:\PruebaDevOps
+  displayName: 'Intentando crear pruebaDevops'
+
 - script:
     npm-cli-login -u ci24 -p $controles$ -e jequesada@gmail.com
+  displayName: 'logeando npm'
+
 - script: 
     npm install ci
+  displayName: 'Instalando modulos'  
+
 - script:
     node backup.js
-  displayName: 'install and build'
+  displayName: 'Intentando correr backup.js'
