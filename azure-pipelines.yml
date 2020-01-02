@@ -10,6 +10,12 @@ pool: Default
 
 steps:
 
+- script: # script path or inline
+  workingDirectory: C:\PruebaPipeline
+  displayName: 'Cambiando de directorio'
+  failOnStderr: 'Fallo cambiando de directorio'
+  env: { string: string } # mapping of environment variables to add
+
 - script:
     cd D:\PruebaDevOps
   displayName: 'Intentando crear pruebaDevops'
